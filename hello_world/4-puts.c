@@ -1,12 +1,14 @@
 #include <stdio.h>
+
 /**
-*main-Entry point 
-*Description:'the program's description'
-*parameter:describe the parameter
-*Return: Always 0 (Success)
+*main-Entry point
+*Description:Affiche du texte a l'ecran
+*Puts:commande
+*Return:Retourne a la ligne
 */
+
 int main(void)
 {
-Puts("\"Programming is like building a multilingual puzzle");
+puts("\"Programming is like building a multilingual puzzle");
 return (0);
 }
