@@ -8,12 +8,12 @@
  */
 int main(void)
 {
-	unsigned short chiffre;
+	int chiffre;
 
-	for (chiffre = 0 ;  chiffre <=9 ; chiffre++)
-	{
-	putchar(chiffre);
-	}
+	for (chiffre = 0 ;  chiffre < 20 ; chiffre++)
+		putchar(chiffre);
+
 	putchar('\n');
+
 	return (0);
 }
