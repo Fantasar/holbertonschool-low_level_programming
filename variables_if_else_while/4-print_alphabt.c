@@ -12,7 +12,7 @@ int main(void)
 
 	for (plouf = 'a' ; plouf <= 'z' ;  plouf++)
 	{
-	if (plouf != 'e' && plouf !='q')
+	if (plouf != 'e' && plouf != 'q')
 		putchar (plouf);
 	}
 
