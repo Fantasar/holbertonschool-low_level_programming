@@ -8,10 +8,11 @@
  */
 int main(void)
 {
-	unsigned short = ('chiffre');
+	unsigned short chiffre;
+
+	for (chiffre = 0 ;  chiffre<=9 ; chiffre++)
 	{
-	putchar("chiffre=0" ; "chiffre<=9" ; chiffre"++");
-	putchar("chiffre")
+	putchar(chiffre);
 	}
-	return=0;
+	return (0);
 }
