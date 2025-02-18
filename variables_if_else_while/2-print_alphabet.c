@@ -4,16 +4,14 @@
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Return: Always 0
  */
-int main (void)
+int main(void)
 {
-	int putc(int c, FILE *stream);
-	int putchar(int c);
+	char alphabet = 'a';
 
-	{
-	putchar("{a.z}\n");
-	}
+	for (alphabet = 'a' ; alphabet <= 'z' ; alphabet++)
+	putchar(alphabet);
+
 	return (0);
 }
-
