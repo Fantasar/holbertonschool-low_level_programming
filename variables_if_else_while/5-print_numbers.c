@@ -12,7 +12,8 @@ int main(void)
 
 	for (chiffre = 0 ; chiffre <= 9 ;  chiffre ++)
 	{
-	printf("%d\n", chiffre);
+	printf("%d", chiffre);
 	}
+	putchar('\n');
 	return (0);
 }
