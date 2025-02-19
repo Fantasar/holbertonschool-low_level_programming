@@ -12,7 +12,7 @@ int main(void)
 	int cheval;
 	char alphabet;
 
-	for(cheval = 0 ; cheval <= 9 ; cheval++)
+	for (cheval = 0 ; cheval <= 9 ; cheval++)
 	{
 	putchar((cheval % 10) + '0');
 	}
