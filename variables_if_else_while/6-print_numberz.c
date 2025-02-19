@@ -11,7 +11,7 @@ int main(void)
 	int chiffre;
 
 	for (chiffre = 0 ;  chiffre < 20 ; chiffre++)
-		putchar(chiffre);
+		putchar((chiffre % 10 ) + '0');
 
 	putchar('\n');
 
