@@ -9,12 +9,12 @@
 int main(void)
 {
 
-	int cheval; 
+	int cheval;
 	char alphabet;
 
-	for(cheval  = 0 ; cheval <= 9 ; cheval++)
+	for(cheval = 0 ; cheval <= 9 ; cheval++)
 	{
-	putchar((cheval % 10)+ '0');
+	putchar((cheval % 10) + '0');
 	}
 
 	for (alphabet = 'a' ; alphabet <= 'f' ; alphabet++)
@@ -24,5 +24,5 @@ int main(void)
 
 	putchar ('\n');
 
-	return(0);
+	return (0);
 }
