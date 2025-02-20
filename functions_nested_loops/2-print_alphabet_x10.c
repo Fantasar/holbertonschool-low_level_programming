@@ -3,6 +3,8 @@
 /**
  * print_alphabet - Prints the alphabet in lowercase, followed by a new line.
  *
+ * print_alphabet_x10 - Prints the alphabets 10 line.
+ *
  * Description: This function prints the lowercase alphabet followed by a
  *              newline character.
  *
@@ -14,7 +16,7 @@ int print_alphabet_x10(void)
 	char b;
 	int a = 0;
 
-	while (a <= 10)
+	while (a <= 9)
 	{
 		for (b = 'a'; b <= 'z' ; b++)
 			{
