@@ -1,14 +1,12 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - Entry point
+ * print_alphabet - Prints the alphabet in lowercase, followed by a new line.
  *
- * print_alphabet - test
+ * Description: This function prints the lowercase alphabet followed by a
+ *              newline character.
  *
- * Return: Always 0
- */
-/**
- * print_alphabet - prints the alphabet in lowercase, followed by a new line.
+ * Return: Nothing (void).
  */
 int print_alphabet(void)
 
