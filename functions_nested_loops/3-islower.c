@@ -2,16 +2,18 @@
 #include "main.h"
 #include <ctype.h>
 /**
- * int_islower(int c) - Prints the alphabet 10 times,
- *		each time followed by a new line.
- * _islower - Verifie si un caractere est une lettre minuscule.
- * @c: Le caractere a  verifier.
+ *_islower - Verifie si un caractere est une lettre minuscule
+ *@c: Le caractere aÃverifier
  *
- * Retourne : 1 si le caractÃ¨re est une lettre minuscule, 0 sinon
- * Description: This function prints the lowercase alphabet 10 times,
- *              each time followed by a new line character.
+ *Cette fonction prend un caractere en entre et retourne 1 si
+ *le caractere est une lettre minuscule
+ *(comprise entre 'a' et 'z' en termes de valeurs ASCII).
+ *Sinon, elle retourne 0.
  *
+ *Return:
+ *1 si le caractere est une lettre minuscule, 0 sinon.
  */
+
 int _islower(int c)
 {
 if (c >= 'a' && c <= 'z')
