@@ -14,7 +14,7 @@
  *1 si le caractere est une lettre minuscule, 0 sinon.
  */
 
-int _isalpha (int c)
+int _isalpha(int c)
 {
 
 if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
