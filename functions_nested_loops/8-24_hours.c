@@ -16,4 +16,22 @@
  *1 si le caractere est une lettre minuscule, 0 sinon.
  */
 
-void jack_bauer(void)
+void jack_bauer()
+{
+	char j;
+	char a;
+	char c;
+	char k;
+
+	int = a;
+	int = b;
+
+	while (a <= 24)
+
+	{
+		for (j = 'a'; a <= 'z' ; j++)
+		{
+		_putchar(j);
+		}
+ 
+}
