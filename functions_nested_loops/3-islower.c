@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include "main.h"
+#include <ctype.h>
 /**
- * int _islower(int c) - Prints the alphabet 10 times,
+ * int_islower(int c) - Prints the alphabet 10 times,
  *		each time followed by a new line.
  *
  * Description: This function prints the lowercase alphabet 10 times,
@@ -10,18 +11,10 @@
  * Return: void
  */
 int _islower(int c)
-
 {
-	char c ='a';
+if (c >= 'a'&& c<= 'z')
+return(1);
+else 
+return (0);
 
-	if (isower(c))
-	{
-	_putchar(1);
-	}
-	else (isower(c))
-	{
-	_putchar(0);
-	}
-
-	return(0);
 }
