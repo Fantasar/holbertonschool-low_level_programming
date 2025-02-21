@@ -3,7 +3,7 @@
 #include <ctype.h>
 /**
  *print_sign - Verifie si un caractere est une lettre minuscule
- *@c: Le caractere aÃverifier
+ *@n: Le caractere aÃverifier
  *
  *Cette fonction prend un caractere en entre et retourne 1 si
  *le caractere est une lettre minuscule
