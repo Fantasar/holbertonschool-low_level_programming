@@ -4,8 +4,8 @@
 #include <stdlib.h>
 
 /**
- *void jack_bauer - Verifie si un caractere est une lettre minuscule
- *@n: Le caractere aÃverifier
+ *jack_bauer - Affiche les minutes et les heures,
+ *avant le BOUM.
  *
  *Cette fonction prend un caractere en entre et retourne 1 si
  *le caractere est une lettre minuscule
