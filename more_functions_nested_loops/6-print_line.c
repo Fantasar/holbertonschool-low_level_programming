@@ -2,7 +2,7 @@
 
 /**
  * print_line - multiplies two integers
- *
+ *@n: int n
  *
  * Return: 0.
 Ã**/
