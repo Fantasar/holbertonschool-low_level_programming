@@ -18,11 +18,16 @@
 int _isupper(int c)
 
 {
-	if(c < 'Z')
+	if(c < 91)
 	{
 	return(1);
 	return('\n');
 	}
+	else if(c < 123)
+	{
+	return(0);
+	}
 	else
 	return(0);
 	}
+
