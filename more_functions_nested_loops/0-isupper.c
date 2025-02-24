@@ -6,6 +6,8 @@
 /**
  *_isupper - Controle les lettres majuscules et minuscules.
  *
+ *@c : Le caractere a verifier.
+ *
  *Cette fonction prend un caractere en entre et retourne 1 si
  *le caractere est une lettre minuscule
  *(comprise entre 'a' et 'z' en termes de valeurs ASCII).
@@ -20,16 +22,16 @@ int _isupper(int c)
 {
 
 
-	if(c >= 'A' && c <= 'Z')
+	if (c >= 'A' && c <= 'Z')
 	{
-	return(1);
-	return('\n');
+	return (1);
+	return ('\n');
 	}
-	else if(c >= 'a' && c <= 'z')
+	else if (c >= 'a' && c <= 'z')
 	{
-	return(0);
+	return (0);
 	}
 	else
-	return(0);
+	return (0);
 	}
 
