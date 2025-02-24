@@ -1,10 +1,8 @@
 #include "main.h"
 
 /**
- * mul - multiplies two integers
- * @a: int a
- * @b: int b
- *
+ * print_numbers - multiplies two integers
+ * @a char
  *
  * Return: 0.
  */
