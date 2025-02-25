@@ -1,0 +1,17 @@
+#include "main.h"
+#include <stdio.h>
+/**
+ * print_diagonal - multiplies two integers
+ *@n: int n
+ *
+ * Return: 0.
+**/
+int main()
+{
+	int Poires = 1;
+	for(Poires = 1; Poires < 100; Poires++);
+
+	printf("%d", Poires);
+	printf("\n");
+	return 0;
+}
