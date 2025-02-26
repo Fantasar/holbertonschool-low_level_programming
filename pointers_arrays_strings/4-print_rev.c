@@ -11,11 +11,11 @@ void print_rev(char *s)
 	int Plouf = 0;
 	int i;
 
-	while(s[Plouf] != '\0')
+	while (s[Plouf] != '\0')
 		{
 		Plouf++;
 		}
-	for(i = Plouf - 1; i >= 0; i--)
+	for (i = Plouf - 1; i >= 0; i--)
 	{
 		_putchar(s[i]);
 	}
