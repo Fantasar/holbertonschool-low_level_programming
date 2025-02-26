@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- *_print_rev - multiplies two integers
- *@Plouf: int size
- *@i : int
+ *print_rev - multiplies two integers
+ *@s : int
  * Return: void.
  **/
 void print_rev(char *s)
