@@ -3,7 +3,8 @@
 #include "main.h"
 /**
 *print_array - plouf
-*@str : plouf
+*@a : plouf
+*@n : test
 *Return: Always 0
 **/
 void print_array(int *a, int n)
