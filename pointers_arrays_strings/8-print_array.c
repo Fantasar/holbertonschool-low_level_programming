@@ -12,12 +12,12 @@ int b;
 	{
 		for (b = 0; b < n ; b++)
 		{
-		if ( b == 0)
+		if( b == 0)
 		{
-		printf("%d",a[b]);
+		printf("%d", a[b]);
 		}
 		else
-		printf(", %d",a[b]);
+		printf(", %d", a[b]);
 		}
 	}
 	printf("\n");
