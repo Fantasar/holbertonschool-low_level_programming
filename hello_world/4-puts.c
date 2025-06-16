@@ -1,8 +1,12 @@
 #include <stdio.h>
-/*
-*fonction main : programme pour afficher un texte.
-*fonction puts: permets d'afficher une ligne ou une chaine de caractere.
-*/
+
+/**
+ * main - Prints "Programming is like building a multilingual
+ *                puzzle, followed by a new line.
+ *
+ * Return: Always 0.
+ */
+
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
