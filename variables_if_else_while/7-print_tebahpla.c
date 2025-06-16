@@ -13,7 +13,7 @@ int main(void)
 {
 char dicos;
 
-for(dicos = 'z'; dicos >= 'a'; dicos--	)
+for (dicos = 'z'; dicos >= 'a'; dicos--)
 	{
 	putchar(dicos);
 	}
