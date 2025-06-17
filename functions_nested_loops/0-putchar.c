@@ -1,13 +1,16 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - Prints "Programming is like building a multilingual
- *                puzzle, followed by a new line.
+ * _putchar - Writes the character c to stdout
+ * @c: The character to print
  *
- * Return: Always 0.
+ * Return: On success 1. On error, -1 is returned and errno.
  */
 int _putchar(char c);
-
+/**
+ * main - Prints _putchar, followed by a new line
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	_putchar('_');
