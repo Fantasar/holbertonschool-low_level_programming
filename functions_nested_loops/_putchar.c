@@ -1,4 +1,5 @@
 #include <unistd.h>
+
 /**
  * _putchar - Writes the character c to standard output.
  * @c: The character to print.
