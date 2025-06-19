@@ -17,7 +17,7 @@ if (n < 98)
 	{
 		if (a == 98)
 			{
-			printf("%d ", a);
+			printf("%d", a);
 			}
 		else
 			{
@@ -32,7 +32,7 @@ else
 	{
 		if (a == 98)
 			{
-			printf("%d ", a);
+			printf("%d", a);
 			}
 		else
 			{
