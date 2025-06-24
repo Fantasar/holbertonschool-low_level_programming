@@ -22,7 +22,7 @@ c = a;
 for (b = c - 1; b >= 0; b--)
 	{
 	_putchar(s[b]);
-	b--;
+	a--;
 	}
 _putchar('\n');
 }
