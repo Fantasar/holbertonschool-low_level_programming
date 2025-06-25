@@ -31,7 +31,8 @@ else /* Si la longeur est impair.*/
 	{
 	b = (a - 1) / 2; /* Commence apres le milieu.*/
 	}
-for (temp = b; temp < a; temp++)
+temp = b + 1;
+for (; temp < a; temp++)
 	{
 	_putchar(str[temp]);
 	}
