@@ -2,38 +2,33 @@
 #include "main.h"
 
 /**
- *puts_half - Affiche la moitier d'une series de nombres.
+ * puts_half - Affiche la moitier d'une chaine de caracteres.
  *
- *@str: Un pointeur.
- * Return: La moitier des nombres, de la serie.
+ * @str: Un pointeur vers la chaine.
+ * Return: Rien.
  */
-
 void puts_half(char *str)
 {
-int a = 0;
-int b;
-int temp;
+    int a = 0;
+    int b;
+    int temp;
 
-while (str[a] != '\0') /* calcul la longeur.*/
-	{
-	a++;
-	}
+    while (str[a] != '\0') /* Calcule la longueur */
+    {
+        a++;
+    }
 
-if (a % 2 == 0) /*Si la longeur est paire.*/
-	{
-	b = a / 2;
-	for (temp = b; temp < a; temp++)
-		{
-		_putchar(str[temp]);
-		}
-	}
-else /* Si la longeur est impair.*/
-	{
-	b = (a - 1) / 2; /* Commence apres le milieu.*/
-	}
-for (temp = b + 1; temp < a; temp++)
-	{
-	_putchar(str[temp]);
-	}
-_putchar('\n');
+    /* Calcule le point de depart selon la pariter*/
+    if (a % 2 == 0)
+        b = a / 2;
+    else
+        b = (a + 1) / 2;
+
+    for (temp = b; temp < a; temp++)  /* Affiche la seconde moitier*/é
+    {
+        _putchar(str[temp]);
+    }
+
+    _putchar('\n');
 }
+
