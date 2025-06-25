@@ -20,7 +20,7 @@ while (dest[a] != '\0')
 	a++;
 	}
 /*boucle qui pose les limites de src avec n et '\0' */
-for (b = 0; src[b] < n && src[b] != '\0'; b++)
+for (b = 0; b < n && src[b] != '\0'; b++)
 	{
 	dest[a + b] = src[b];
 	}
