@@ -9,26 +9,27 @@
  */
 void puts_half(char *str)
 {
-    int a = 0;
-    int b;
-    int temp;
+int a = 0;
+int b;
+int temp;
 
-    while (str[a] != '\0') /* Calcule la longueur */
-    {
-        a++;
-    }
-
-    /* Calcule le point de depart selon la pariter*/
-    if (a % 2 == 0)
-        b = a / 2;
-    else
-        b = (a + 1) / 2;
-
-    for (temp = b; temp < a; temp++)  /* Affiche la seconde moitier*/é
-    {
-        _putchar(str[temp]);
-    }
-
-    _putchar('\n');
+while (str[a] != '\0') /* Calcule la longueur */
+	{
+	a++;
+	}
+/* Calcule le point de depart selon la pariter*/
+if (a % 2 == 0)
+	{
+	b = a / 2;
+	}
+else
+	{
+	b = (a + 1) / 2;
+	}
+for (temp = b; temp < a; temp++)  /* Affiche la seconde moitier*/
+	{
+	_putchar(str[temp]);
+	}
+_putchar('\n');
 }
 
