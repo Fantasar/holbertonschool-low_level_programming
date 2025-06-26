@@ -18,12 +18,12 @@ while (s1[a] != '\0' && s2[a] != '0')
 /*Si negatif car s1 plus courts que s2 */
 	if (s1[a] < s2[a])
 		{
-		return (-1);
+		return (-15);
 		}
 /*Si positif si s1 est plus grands que s2 */
 	else if (s1[a] > s2[a])
 		{
-		return (1);
+		return (15);
 		}
 	a++;
 	}
