@@ -18,10 +18,10 @@ char *ptr = str;
 
 while (*ptr != '\0')
 	{
-/* fonction toouper permet de modifier les caracteres*/
+/* Convertie en majuscule en utilisant la table ASCII*/
 	if (*ptr >= 'a' && *ptr <= 'z')
 		{
-		*ptr = toupper(*ptr);
+		*ptr = *ptr - 32;
 		}
 	ptr++;
 	}
