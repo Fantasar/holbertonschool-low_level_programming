@@ -2,34 +2,37 @@
 #include "main.h"
 
 /**
- * print_array - Affiche un tableaux.
+ * _atoi - Convertie une chaine en entier.
  *
- * @a: Un pointeur vers la chaine.
- * @n: une variable.
- *Return: Rien.
+ * @s: Un pointeur vers la chaine.
+ *
+ *Return: la valeur n.
  */
 
 int _atoi(char *s)
 {
 int n = 0;
-int a = 0;
-for(a = 0; s[a] == '\0'; a++)
+int sign = 1;
+int i = 0;
+
+/*Ignore les chiffres*/
+while (s[i] != '\0' && !(s[i] >= '0' && s[i] <= '9'))
+{
+/* Inverse le signe */
+	if (s[i] == '-')
 	{
-	return (0);
+	sign *= -1;
 	}
-while (s[a] != '\0')
+	i++;
+}
+
+/*Convertie les chiffres en nombre */
+while (s[i] != '\0' && s[i] >= '0' && s[i] <= '9')
 	{
-	if(s[a] == '-')
-	{
-	a = a * - 1;
-	a++
+	n = n * 10 + (s[i] - '0');
+	i++;
 	}
-for (a = 0; s[a] >= '0' && s[a] <= '9'; a++)
- 	{
-		if
-		{
-		n = 10 * n + (s[a] - '0');
-		}
-	}
-return(n);
+
+/* Permet d'appliquer le signe et faire le retour */
+return (n * sign);
 }
