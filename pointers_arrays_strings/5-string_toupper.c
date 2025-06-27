@@ -25,5 +25,6 @@ while (*ptr != '\0')
 		}
 	ptr++;
 	}
+*ptr = '\0';
 return (str);
 }
