@@ -18,13 +18,12 @@ char *ptr = str;
 
 while (*ptr != '\0')
 	{
-	if (*ptr >= 'a' && *ptr <= 'z')
+	ptr++;
 /* fonction toouper permet de modifier les caracteres*/
+	if (*ptr >= 'a' && *ptr <= 'z')
 		{
 		*ptr = toupper(*ptr);
 		}
-	ptr++;
 	}
-*ptr = '\0';
 return (str);
 }
