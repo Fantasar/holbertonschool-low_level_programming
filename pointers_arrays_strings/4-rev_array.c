@@ -2,25 +2,22 @@
 #include "main.h"
 
 /**
- * _strncat - Concatise deux chaine de caractere sans les octets.
+ * reverse_array - reverse deux tableaux d'entier.
  *
- * @dest: Un pointeur vers la chaine.
- * @src: Un pointeur vers une autre chaine.
- * @n : Un entier qui contient la limite.
- *Return: dest.
+ * @a: Un pointeur vers un tableaux d'entier.
+ * @n: Contient la longeur du tableaux.
+ *Return: rien.
  */
 
 void reverse_array(int *a, int n)
 {
 int temp;
-int *stock = &temp;
-int temp2;
-
-while(a[n] != '\0')
+int i;
+/*Boucle for pour trouver la moitier du tableaux*/
+for (i = 0; i < n / 2; i++)
 	{
-	a++;
-	stock[temp] = a[n];
-	
+	temp = a[i];
+	a[i] = a[n - i - 1];
+	a[n - i - 1] = temp;
 	}
-temp --;
 }
