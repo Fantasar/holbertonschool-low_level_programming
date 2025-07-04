@@ -2,9 +2,11 @@
 #include "main.h"
 
 /**
- * _strlen_recursion - Fonction qui va compter le nombre de caractere d'une chaine.
+ * _strlen_recursion - Fonction qui va compter le nombre de caractere
+ *		      d'une chaine.
  *
- * @s: Un pointeur vers la zone memoire a modifier.
+ *@s: Un pointeur vers la zone memoire a modifier.
+ *Return: retourne une string.
  */
 
 int _strlen_recursion(char *s)
