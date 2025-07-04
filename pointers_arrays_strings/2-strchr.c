@@ -22,4 +22,3 @@ for (temp = 0; s[temp] != '\0'; temp++)
 	}
 return (NULL);
 }
-
