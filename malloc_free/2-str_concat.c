@@ -18,30 +18,23 @@ int taille2;
 int index = 0;
 int plouf;
 
-taille = strlen(s1);
-taille2 = strlen(s2);
-plouf = taille + taille2 + 1;
+taille = (s1 == NULL) ? 0 : strlen(s1);
+taille2 = (s2 == NULL) ? 0 : strlen(s2);
 
+plouf = taille + taille2 + 1;
 str = malloc(plouf *sizeof(char));
+
 if (str == NULL)
 	{
 	return (NULL);
 	}
-for (a = 0; s1[a] != '\0'; a++)
+for (a = 0; a < taille; a++)
 	{
-	if (s1 == NULL)
-		{
-		return (NULL);
-		}
 	str[index] = s1[a];
 	index++;
 	}
-for (b = 0; s2[b] != '\0'; b++)
+for (b = 0; b < taille2; b++)
 	{
-	if (s2 == NULL)
-		{
-		return (NULL);
-		}
 	str[index] = s2[b];
 	index++;
 	}
