@@ -29,11 +29,19 @@ if (str == NULL)
 	}
 for (a = 0; s1[a] != '\0'; a++)
 	{
+	if (s1 == NULL)
+		{
+		return (NULL);
+		}
 	str[index] = s1[a];
 	index++;
 	}
 for (b = 0; s2[b] != '\0'; b++)
 	{
+	if (s2 == NULL)
+		{
+		return (NULL);
+		}
 	str[index] = s2[b];
 	index++;
 	}
