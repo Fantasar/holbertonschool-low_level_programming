@@ -15,12 +15,15 @@ char *dup;
 int a;
 int b = 0;
 int memoire;
-
+int c;
 if (str == NULL)
 	{
 	return (NULL);
 	}
-memoire = strlen(str) + 1;
+for (c = 0; str[c] <= '\0'; c++)
+	{
+	memoire++;
+	}
 dup = malloc(memoire *sizeof(char));
 if (dup == NULL)
 	{
