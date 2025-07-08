@@ -16,7 +16,7 @@ int index = 0;
 
 if (s1 == NULL)
 	{
-	return (NULL);
+	return ("");
 	}
 for (c = 0; s1[c] != '\0'; c++)
 	{
@@ -24,7 +24,7 @@ for (c = 0; s1[c] != '\0'; c++)
 	}
 if (s2 == NULL)
 	{
-	return (NULL);
+	return ("");
 	}
 for (d = 0; s2[d] != '\0'; d++)
 	{
