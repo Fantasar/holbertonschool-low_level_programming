@@ -1,43 +1,51 @@
 #include "main.h"
-#include
-#include
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
-* main - check the code
-*
-* Return: Always 0.
-*/
+ *string_nconcat- concatise deux strings.
+ *@s1: string 1.
+ *@s2: string 2.
+ *@n: Nombre de caractere.
+ * Return: str la chaine concatiser.
+ */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-int a, b;
+unsigned int a, b;
 char *str;
-unsigned int temp = 0;
-int stock = 0;
+unsigned int c, d;
 if (s1 == NULL)
 	{
-	return (NULL);
+	return ("");
 	}
 for (a = 0; s1[a] != '\0'; a++)
 	{
-	stock++;
 	}
 if (s2 == NULL)
 	{
-	return (NULL);
+	return ("");
 	}
 for (b = 0; s2[b] != '\0'; b++)
 	{
-	stock++;
-	temp[b];
- 	}
-str = malloc( (stock + 1) * sizeof(char));
-if ( str == NULL)
+	}
+if (n >= b)
+	{
+	n = b;
+	}
+str = malloc(a + n + 1);
+if (str == NULL)
 	{
 	return (NULL);
 	}
-if (n >= temp)
+for (c = 0; c < a; c++)
 	{
-	return (temp);
+	str[c] = s1[c];
 	}
+for (d = 0; d < n; d++)
+	{
+	str[a + d] = s2[d];
+	}
+	str[a + n] = '\0';
 return (str);
+}
