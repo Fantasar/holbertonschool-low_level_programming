@@ -24,7 +24,7 @@ for (c = 0; str[c] <= '\0'; c++)
 	{
 	memoire++;
 	}
-dup = malloc(memoire *sizeof(char));
+dup = malloc(memoire * sizeof(char));
 if (dup == NULL)
 	{
 	return (NULL);

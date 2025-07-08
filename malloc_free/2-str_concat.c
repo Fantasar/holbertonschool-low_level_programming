@@ -11,16 +11,25 @@
 char *str_concat(char *s1, char *s2)
 {
 char *str;
-int a;
-int b;
-int taille;
-int taille2;
+int a, c, b, d, taille, taille2, plouf;
 int index = 0;
-int plouf;
 
-taille = (s1 == NULL) ? 0 : strlen(s1);
-taille2 = (s2 == NULL) ? 0 : strlen(s2);
-
+if (s1 == NULL)
+	{
+	return (NULL);
+	}
+for (c = 0; s1[c] != '\0'; c++)
+	{
+	taille++;
+	}
+if (s2 == NULL)
+	{
+	return (NULL);
+	}
+for (d = 0; s2[d] != '\0'; d++)
+	{
+	taille2++;
+	}
 plouf = taille + taille2 + 1;
 str = malloc(plouf *sizeof(char));
 
