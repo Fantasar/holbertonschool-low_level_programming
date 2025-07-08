@@ -18,7 +18,7 @@ int memoire;
 int c;
 if (str == NULL)
 	{
-	return (NULL);
+	return ("");
 	}
 for (c = 0; str[c] <= '\0'; c++)
 	{
