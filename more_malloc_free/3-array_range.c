@@ -27,7 +27,7 @@ if (ptr == NULL)
 	{
 	return (NULL);
 	}
-for(a = 0; min < taille; a++)
+for(a = 0; a < taille; a++)
 	{
 	ptr[a] = min + a;
 	}
