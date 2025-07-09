@@ -12,28 +12,27 @@
 char *_strdup(char *str)
 {
 char *dup;
-int a;
-int b = 0;
-int memoire;
-int c;
+int a, c;
+
 if (str == NULL)
 	{
 	return ("");
 	}
-for (c = 0; str[c] <= '\0'; c++)
+/** Calcule la longeur de la chaine.*/
+for (c = 0; str[c] != '\0'; c++)
 	{
-	memoire++;
 	}
-dup = malloc(memoire * sizeof(char));
+/** Alloue de la memoire pour la nouvelle chaine.*/
+dup = malloc(sizeof(char) * (c + 1));
 if (dup == NULL)
 	{
 	return (NULL);
 	}
-for (a = 0; str[a] != '\0'; a++)
+/** Copie la chaine dans la nouvelle memoire.*/
+for (a = 0; a <= c; a++)
 	{
-	dup[b] = str[a];
-	b++;
+	dup[a] = str[a];
 	}
-dup[b] = '\0';
+
 return (dup);
 }
