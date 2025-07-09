@@ -4,13 +4,13 @@
 #include <stdio.h>
 
 /**
- * struct dog_t - Represents a dog with basic information.
+ * struct dog - Represents a dog with basic information.
  * @name: Pointer to the dog's name.
  * @age: Age of the dog in years.
  * @owner: Pointer to the name of the dog's owner.
  */
 
-struct dog_t
+struct dog
 {
 	char *name;
 	float age;
