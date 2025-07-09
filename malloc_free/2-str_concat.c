@@ -17,17 +17,15 @@ int a, c, b, d, taille, taille2, plouf;
 taille = 0;
 taille2 = 0;
 
-if (s1 == NULL)
+if (s1 != NULL)
 {
-return (NULL);
 for (c = 0; s1[c] != '\0'; c++)
 	{
 	taille++;
 	}
 }
-if (s2 == NULL)
+if (s2 != NULL)
 {
-return (NULL);
 for (d = 0; s2[d] != '\0'; d++)
 	{
 	taille2++;
