@@ -1,34 +1,65 @@
-#include <stdio.h>
 #include "dog.h"
 #include <stdlib.h>
 
+/**
+ * new_dog - Crer un nouveau chien.
+ * @name: Nom du chien.
+ * @age: age du chien.
+ * @owner: Proprietaire du chien.
+ *
+ * Return: Pointeur vers le nouveau chien, ou NULL si la fonction echoue.
+ */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
-unsigned int a = 0;
-unsigned int b = 0;
+dog_t *newDog;
+char newName;
+char *newOwner;
+int a = 0, b = 0;
+int i;
 
-dog_t *new_dog = malloc(sizeof(dog_t));
-if (new_dog == NULL)
-	{
-	return (NULL);
-	}
-while (name[a] != '\0')
-	{
+	// Calculer la longueur de name
+	while (name[a] != '\0')
 	a++;
-	}
-new_dog->name = malloc(sizeof(char) * (a + 1))
-if (new_dog->name == NULL)
-	{
-	return (NULL);
-	}
-while (owner[b] != '\0')
-	{
+
+	// Calculer la longueur de owner
+	while (owner[b] != '\0')
 	b++;
-	}
-new_dog->owner = malloc(sizeof(char) * (b + 1));
-if (new_dog->owner == NULL)
-	{
-	return (NULL);
-	}
-return (new_dog);
+
+	// Allouer de la memoire pour la structure dog_t
+	newDog = malloc(sizeof(dog_t));
+	if (newDog == NULL)
+	return NULL;
+
+	// Allouer de la memoire pour le nom et verifier en cas echec
+	newName = malloc(a + 1);
+	if (newName == NULL)
+		{
+		free(newDog);
+		return NULL;
+		}
+
+	// Copier le nom caractere par caractere
+	for (i = 0; i <= a; i++)
+	newName[i] = name[i];
+
+	// Allouer de la memoire pour le proprietaire et verifier en cas echec
+	newOwner = malloc(b + 1);
+	if (newOwner == NULL)
+		{
+		free(newName);
+		free(newDog);
+		return NULL;
+		}
+
+	// Copier le proprietaire caractere par caractere
+	for (i = 0; i <= b; i++)
+	newOwner[i] = owner[i];
+
+	// Initialiser les champs de la structure
+	newDog->name = newName;
+	newDog->age = age;
+	newDog->owner = newOwner;
+
+	return newDog;
 }
