@@ -17,17 +17,21 @@ char *str;
 unsigned int c, d;
 if (s1 == NULL)
 	{
-	return (NULL);
+	return ("");
 	}
 for (a = 0; s1[a] != '\0'; a++)
 	{
 	}
 if (s2 == NULL)
 	{
-	return (NULL);
+	return ("");
 	}
 for (b = 0; s2[b] != '\0'; b++)
 	{
+	}
+if ( n == 0)
+	{
+	return (s1);
 	}
 if (n >= b)
 	{
