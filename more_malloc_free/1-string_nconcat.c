@@ -17,14 +17,14 @@ char *str;
 unsigned int c, d;
 if (s1 == NULL)
 	{
-	return ("");
+	return (NULL);
 	}
 for (a = 0; s1[a] != '\0'; a++)
 	{
 	}
 if (s2 == NULL)
 	{
-	return ("");
+	return (NULL);
 	}
 for (b = 0; s2[b] != '\0'; b++)
 	{
@@ -33,10 +33,13 @@ if (n >= b)
 	{
 	n = b;
 	}
+if (a + (n > b ? b : n) + 1 > 0)
+{
 str = malloc(a + n + 1);
 if (str == NULL)
 	{
 	return (NULL);
+	}
 	}
 for (c = 0; c < a; c++)
 	{
