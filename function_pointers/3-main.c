@@ -3,30 +3,33 @@
 #include <string.h>
 #include "3-calc.h"
 /**
- * struct op - Struct op
+ *main - Fonction principal.
  *
- * @op: The operator
- * @f: The function associated
+ * @argc: Nombre d'argument.
+ * @argv: Valeurs des arguments.
+ * Return: Un entier.
  */
 
-int main(char *s)
+int main(int argc, char *argv[])
 {
 int a = 0;
 
-if (s == NULL)
-	{
-	return (1);
-	}
-if (strlen(s) < 2)
+if (argc < 2)
 	{
 	printf("Error\n");
-	exit (98);
+	return (1);
 	}
-a = atoi(s);
+if (strlen(argv[1]) < 2)
+	{
+	printf("Error\n");
+	exit(98);
+	}
+a = atoi(argv[1]);
+
 if (a == 0)
 	{
 	printf("Error\n");
-	exit (99);
+	exit(99);
 	}
 return (a);
 }
