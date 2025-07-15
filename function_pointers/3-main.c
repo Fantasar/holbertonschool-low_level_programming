@@ -10,26 +10,32 @@
  * Return: Un entier.
  */
 
-int main(int argc, char *argv[])
-{
-int a = 0;
-
-if (argc < 2)
-	{
-	printf("Error\n");
-	return (1);
-	}
-if (strlen(argv[1]) < 2)
+int main(int argc, char *argv[]) {
+	if (argc != 4)
 	{
 	printf("Error\n");
 	exit(98);
 	}
-a = atoi(argv[1]);
 
-if (a == 0)
+int (*operation)(int, int) = get_op_func(argv[2]);
+
+if (operation == NULL)
 	{
 	printf("Error\n");
 	exit(99);
 	}
-return (a);
+
+int num1 = atoi(argv[1]);
+int num2 = atoi(argv[3]);
+
+if ((argv[2][0] == '/' || argv[2][0] == '%') && num2 == 0)
+	{
+	printf("Error\n");
+	exit(100);
+	}
+
+int result = operation(num1, num2);
+printf("%d\n", result);
+
+return (0);
 }
