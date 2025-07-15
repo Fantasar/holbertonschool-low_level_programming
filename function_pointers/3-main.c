@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <string.h>
+#include "3-calc.h"
 /**
  * struct op - Struct op
  *
@@ -8,13 +9,24 @@
  * @f: The function associated
  */
 
-int main ()
+int main(char *s)
 {
-atoi
-if
+int a = 0;
 
-if
-
-if
-
+if (s == NULL)
+	{
+	return (1);
+	}
+if (strlen(s) < 2)
+	{
+	printf("Error\n");
+	exit (98);
+	}
+a = atoi(s);
+if (a == 0)
+	{
+	printf("Error\n");
+	exit (99);
+	}
+return (a);
 }

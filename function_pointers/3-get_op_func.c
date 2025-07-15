@@ -1,21 +1,6 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include "3-calc.h"
-
-/**
- * struct op_t - Structure representant un operateur et sa fonction associee.
- * @op: L'operateur sous forme de chaine de caracteres.
- * @f: Pointeur vers la fonction qui implemente l'operation.
- *
- * Description: Cette structure est utilisee pour associer un operateur.
- * √† sa fonction correspondante.
- */
-
-typedef struct op_t
-	{
-	char *op;
-	int (*f)(int a, int b);
-	}op_t;
+#include <stdio.h>
 /**
  * get_op_func - Selectionne la fonction correcte pour effectuer l'operation.
  * @s: L'operateur passe√en argument au programme.
