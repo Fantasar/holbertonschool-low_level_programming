@@ -3,56 +3,44 @@
 #include <stdarg.h>
 
 /**
- * print_arg - prints a single argument based on type
- * @type: the type of the argument
- * @args: the va_list to fetch from
- */
-void print_arg(char type, va_list args)
-{
-	char *s;
-
-	if (type == 'c')
-	printf("%c", va_arg(args, int));
-	else if (type == 'i')
-	printf("%d", va_arg(args, int));
-	else if (type == 'f')
-	printf("%f", va_arg(args, double));
-	else if (type == 's')
-	{
-	s = va_arg(args, char *);
-	if (s == NULL)
-		printf("(nil)");
-	else
-		printf("%s", s);
-	}
-}
-
-/**
  * print_all - prints anything
  * @format: list of types of arguments passed
  */
 void print_all(const char * const format, ...)
 {
-va_list args;
-int a = 0, premier_v = 1;
+	va_list args;
+	int i = 0, first = 1;
+	char *str;
 
-va_start(args, format);
+	va_start(args, format);
 
-while (format && format[a] != '\0')
+	while (format && format[i])
 	{
-	if (format[a] == 'c' || format[a] == 'i' ||
-	format[a] == 'f' || format[a] == 's')
-	{
-		if (!premier_v)
-		printf(", ");
-		else
-		premier_v = 0;
+		if (format[i] == 'c' || format[i] == 'i' ||
+		    format[i] == 'f' || format[i] == 's')
+		{
+			if (!first)
+				printf(", ");
+			if (first)
+				first = 0;
 
-		print_arg(format[a], args);
+			if (format[i] == 'c')
+				printf("%c", va_arg(args, int));
+			if (format[i] == 'i')
+				printf("%d", va_arg(args, int));
+			if (format[i] == 'f')
+				printf("%f", va_arg(args, double));
+			if (format[i] == 's')
+			{
+				str = va_arg(args, char *);
+				if (str)
+					printf("%s", str);
+				if (!str)
+					printf("(nil)");
+			}
+		}
+		i++;
 	}
-	a++;
-	}
-
 	printf("\n");
 	va_end(args);
 }
