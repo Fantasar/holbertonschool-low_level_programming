@@ -19,23 +19,23 @@ void print_all(const char * const format, ...)
 		if (format[i] == 'c' || format[i] == 'i' ||
 		    format[i] == 'f' || format[i] == 's')
 		{
-			if (!first)
+			else if (!first)
 				printf(", ");
-			if (first)
+			else if (first)
 				first = 0;
 
-			if (format[i] == 'c')
+			else if (format[i] == 'c')
 				printf("%c", va_arg(args, int));
-			if (format[i] == 'i')
+			else if (format[i] == 'i')
 				printf("%d", va_arg(args, int));
-			if (format[i] == 'f')
+			else if (format[i] == 'f')
 				printf("%f", va_arg(args, double));
-			if (format[i] == 's')
+			else if (format[i] == 's')
 			{
 				str = va_arg(args, char *);
 				if (str)
 					printf("%s", str);
-				if (!str)
+				else if (!str)
 					printf("(nil)");
 			}
 		}
