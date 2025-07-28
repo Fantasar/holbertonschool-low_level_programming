@@ -10,13 +10,11 @@
 size_t _strlen(const char *theString)
 {
 int index;
-int count;
-
 for (index = 0; theString[index] != '\0'; index++)
 {
-count++;
+;
 }
-return (count);
+return (index);
 }
 
 /**
