@@ -23,7 +23,7 @@ if (text_content == NULL)
 	text_content = "";
 	}
 
-while (filename[index] != '\0')
+while (text_content[index] != '\0')
 	{
 	index++;
 	}
