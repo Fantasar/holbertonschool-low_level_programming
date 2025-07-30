@@ -13,3 +13,30 @@
 int create_file(const char *filename, char *text_content)
 {
 
+int index = 0;
+int file;
+
+if (filename == NULL)
+	{
+	return (-1);
+	}
+if (text_content == NULL)
+	{
+	text_content = "";
+	}
+while (filename[index] != '\0')
+	{
+	index++;
+	}
+
+file = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+
+if (file == -1)
+	{
+	return (-1);
+	}
+
+write(file, text_content, index);
+
+return (1);
+}
